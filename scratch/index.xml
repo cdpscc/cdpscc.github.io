@@ -17,9 +17,21 @@
       <guid>https://cdpscc.github.io/scratch/parallel/</guid>
       <description>
 
+&lt;p&gt;&lt;em&gt;Note: this is still just a draft&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+
 &lt;h2 id=&#34;parallel-scratch&#34;&gt;Parallel Scratch&lt;/h2&gt;
 
-&lt;p&gt;blah&lt;/p&gt;
+&lt;p&gt;In some of your Scratch projects so far, you might have seen some scripts that look like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;forever
+  if &amp;lt;key [up arrow ^] pressed then
+    change y by (10)
+  end
+  if &amp;lt;key [down arrow ^] pressed then
+    change y by (-10)
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
