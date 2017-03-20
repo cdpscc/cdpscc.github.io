@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scratches on CDPS code club</title>
+    <link>https://cdpscc.github.io/scratch/index.xml</link>
+    <description>Recent content in Scratches on CDPS code club</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Mar 2017 14:36:58 +1300</lastBuildDate>
+    <atom:link href="https://cdpscc.github.io/scratch/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Parallel Scratch</title>
+      <link>https://cdpscc.github.io/scratch/parallel/</link>
+      <pubDate>Sat, 18 Mar 2017 14:36:58 +1300</pubDate>
+      
+      <guid>https://cdpscc.github.io/scratch/parallel/</guid>
+      <description>
+
+&lt;h2 id=&#34;parallel-scratch&#34;&gt;Parallel Scratch&lt;/h2&gt;
+
+&lt;p&gt;blah&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
