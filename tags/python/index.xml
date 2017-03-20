@@ -16,9 +16,30 @@
       <guid>https://cdpscc.github.io/python/debugging/</guid>
       <description>
 
-&lt;h2 id=&#34;name-errors&#34;&gt;name errors&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; this is still a draft&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;blah&lt;/p&gt;
+&lt;h3 id=&#34;name-errors-usually-typos&#34;&gt;Name errors (usually typos)&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
+from turtle import *
+from random import *
+
+def randomcolour():
+    red = randint(0, 255)
+    green = randint(0, 255)
+    blue = randint(0, 255)
+    color(red, green, blue)
+
+def randomplace():
+    x = randint(-100, 100)
+    y = randint(-100, 100)
+    goto(x, y)
+
+shape(&amp;quot;turtle&amp;quot;)
+randomcolour()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;indentation&#34;&gt;Indentation&lt;/h3&gt;
 </description>
     </item>
     
@@ -108,6 +129,14 @@
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;full_name = first_name + last name
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; you may notice that we didn&amp;rsquo;t add a space between those names - whoops! That&amp;rsquo;s right, the full names will be all squished up. Here&amp;rsquo;s a way to add the space:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;set (full name) to (join (first name) (join ( ) (last name)))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;full_name = first_name + &#39; &#39; + last name
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;input-and-output&#34;&gt;Input and Output&lt;/h2&gt;
@@ -241,6 +270,28 @@ else:
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;for i in range(7):
     something()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;random-numbers&#34;&gt;Random numbers&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;set (dice roll) to (pick random (1) to (6))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In Python you need to import a random module to get the extra code for random numbers. At the top of your program, add the following line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from random import randint
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from random import *
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The second example imports all sorts of other random number stuff too.&lt;/p&gt;
+
+&lt;p&gt;Then later on in your program when need a random number, you can use an example like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;dice_roll = randint(1, 6)
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>

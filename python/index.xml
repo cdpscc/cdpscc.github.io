@@ -17,9 +17,30 @@
       <guid>https://cdpscc.github.io/python/debugging/</guid>
       <description>
 
-&lt;h2 id=&#34;name-errors&#34;&gt;name errors&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; this is still a draft&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;blah&lt;/p&gt;
+&lt;h3 id=&#34;name-errors-usually-typos&#34;&gt;Name errors (usually typos)&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
+from turtle import *
+from random import *
+
+def randomcolour():
+    red = randint(0, 255)
+    green = randint(0, 255)
+    blue = randint(0, 255)
+    color(red, green, blue)
+
+def randomplace():
+    x = randint(-100, 100)
+    y = randint(-100, 100)
+    goto(x, y)
+
+shape(&amp;quot;turtle&amp;quot;)
+randomcolour()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;indentation&#34;&gt;Indentation&lt;/h3&gt;
 </description>
     </item>
     

@@ -144,6 +144,14 @@
 <pre><code class="language-python">full_name = first_name + last name
 </code></pre>
 
+<p><strong>Note:</strong> you may notice that we didn&rsquo;t add a space between those names - whoops! That&rsquo;s right, the full names will be all squished up. Here&rsquo;s a way to add the space:</p>
+
+<pre><code class="language-blocks">set (full name) to (join (first name) (join ( ) (last name)))
+</code></pre>
+
+<pre><code class="language-python">full_name = first_name + ' ' + last name
+</code></pre>
+
 <h2 id="input-and-output">Input and Output</h2>
 
 <h3 id="display-some-text-on-the-screen">Display some text on the screen:</h3>
@@ -277,6 +285,28 @@ else:
     something()
 </code></pre>
 
+<h2 id="random-numbers">Random numbers</h2>
+
+<pre><code class="language-blocks">set (dice roll) to (pick random (1) to (6))
+</code></pre>
+
+<p>In Python you need to import a random module to get the extra code for random numbers. At the top of your program, add the following line:</p>
+
+<pre><code class="language-python">from random import randint
+</code></pre>
+
+<p>or:</p>
+
+<pre><code class="language-python">from random import *
+</code></pre>
+
+<p>The second example imports all sorts of other random number stuff too.</p>
+
+<p>Then later on in your program when need a random number, you can use an example like this:</p>
+
+<pre><code class="language-python">dice_roll = randint(1, 6)
+</code></pre>
+
 				</section>
 			</article>
 		</main>
@@ -324,6 +354,7 @@ else:
 <li><a href="#loop-until">Loop until</a></li>
 <li><a href="#loop-a-number-of-times">Loop a number of times</a></li>
 </ul></li>
+<li><a href="#random-numbers">Random numbers</a></li>
 </ul></li>
 </ul>
 </nav>

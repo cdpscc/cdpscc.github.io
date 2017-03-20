@@ -64,9 +64,30 @@
 				<section>
 					
 
-<h2 id="name-errors">name errors</h2>
+<p><strong>Note:</strong> this is still a draft&hellip;</p>
 
-<p>blah</p>
+<h3 id="name-errors-usually-typos">Name errors (usually typos)</h3>
+
+<pre><code class="language-python">
+from turtle import *
+from random import *
+
+def randomcolour():
+    red = randint(0, 255)
+    green = randint(0, 255)
+    blue = randint(0, 255)
+    color(red, green, blue)
+
+def randomplace():
+    x = randint(-100, 100)
+    y = randint(-100, 100)
+    goto(x, y)
+
+shape(&quot;turtle&quot;)
+randomcolour()
+</code></pre>
+
+<h3 id="indentation">Indentation</h3>
 
 				</section>
 			</article>
@@ -87,7 +108,11 @@
 <ul>
 <li>
 <ul>
-<li><a href="#name-errors">name errors</a></li>
+<li>
+<ul>
+<li><a href="#name-errors-usually-typos">Name errors (usually typos)</a></li>
+<li><a href="#indentation">Indentation</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
