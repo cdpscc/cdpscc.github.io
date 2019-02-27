@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scratch on CDPS code club</title>
-    <link>https://cdpscc.github.io/categories/scratch/index.xml</link>
+    <link>https://cdpscc.github.io/categories/scratch/</link>
     <description>Recent content in Scratch on CDPS code club</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://cdpscc.github.io/categories/scratch/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Mar 2017 14:36:58 +1300</lastBuildDate>
+    
+	<atom:link href="https://cdpscc.github.io/categories/scratch/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Parallel Scratch</title>
@@ -14,51 +17,9 @@
       <pubDate>Sat, 18 Mar 2017 14:36:58 +1300</pubDate>
       
       <guid>https://cdpscc.github.io/scratch/parallel/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Note: this is still just a draft&amp;hellip;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;In some of your Scratch projects so far, you might have seen some scripts that look like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;forever
-  if &amp;lt;key [up arrow v] pressed&amp;gt; then
-    change y by (10)
-  end
-  if &amp;lt;key [down arrow v] pressed&amp;gt; then
-    change y by (-10)
-  end
-  if &amp;lt;key [left arrow v] pressed&amp;gt; then
-    change x by (-10)
-  end
-  if &amp;lt;key [right arrow v] pressed&amp;gt; then
-    change x by (10)
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This code follows a single line of steps one after the other. This approach has only one step running at once. Scratch can only ever be reacting to one key at a time.&lt;/p&gt;
-
-&lt;p&gt;What would it look like if we split that up so that Scratch did more of the work behind the scenes, and our code did less work?&lt;/p&gt;
-
-&lt;p&gt;For example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;
-when [up arrow v] key pressed
-change y by (10)
-
-when [down arrow v] key pressed
-change y by (-10)
-
-when [left arrow v] key pressed
-change x by (-10)
-
-when [right arrow v] key pressed
-change x by (10)
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now we have five less blocks, the code is smaller and hopefully faster. Not only that, Scratch can now react to multiple keys at a time internally. We now have multiple code blocks running in &lt;em&gt;&amp;lsquo;parallel&amp;rsquo;&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;We can make our projects more flexible by reacting to different Scratch events like this rather than creating one big loop with lots and lots of &lt;strong&gt;if&lt;/strong&gt; checks in them.&lt;/p&gt;
-</description>
+      <description>Note: this is still just a draft&amp;hellip;
+In some of your Scratch projects so far, you might have seen some scripts that look like this:
+forever if &amp;lt;key [up arrow v] pressed&amp;gt; then change y by (10) end if &amp;lt;key [down arrow v] pressed&amp;gt; then change y by (-10) end if &amp;lt;key [left arrow v] pressed&amp;gt; then change x by (-10) end if &amp;lt;key [right arrow v] pressed&amp;gt; then change x by (10) end end  This code follows a single line of steps one after the other.</description>
     </item>
     
     <item>
@@ -67,251 +28,9 @@ change x by (10)
       <pubDate>Sat, 18 Mar 2017 14:36:12 +1300</pubDate>
       
       <guid>https://cdpscc.github.io/scratch-vs-python/</guid>
-      <description>
-
-&lt;p&gt;This page is for comparing Scratch code to Python code to help you use your knowledge of one to help learn the other. They aren&amp;rsquo;t as different as you might think.&lt;/p&gt;
-
-&lt;h2 id=&#34;comments&#34;&gt;Comments&lt;/h2&gt;
-
-&lt;p&gt;Comments are bits of text in the code that don&amp;rsquo;t do anything and are there for helping people reading the code to understand it.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;// This is a Scratch comment.
-// You can create them by right clicking on the script background or a code block.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# This is a Python comment.
-# Anything after a hash symbol (#) on a line is a comment
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;variables&#34;&gt;Variables&lt;/h2&gt;
-
-&lt;h3 id=&#34;set-a-number-variable&#34;&gt;Set a number variable&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;set (age) to [9]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;age = 9
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;set-a-text-variable&#34;&gt;Set a text variable&lt;/h3&gt;
-
-&lt;p&gt;In computer language a chunk of text is also called a &lt;strong&gt;string&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;set (name) to [Scratch]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In Python, a string variable needs to be wrapped in quote marks. They can be either single or double quotes.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;name = &#39;Scratch&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;or&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;name = &amp;quot;Scratch&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Double quotes are good if you want to put a single quote or apostrophe in your string:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;telling_off = &amp;quot;Don&#39;t pick your nose!&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Otherwise Python can&amp;rsquo;t tell the difference between the apostrophe and the end of the string.&lt;/p&gt;
-
-&lt;h3 id=&#34;add-a-number-on-to-a-variable-the-long-way&#34;&gt;Add a number on to a variable (the long way)&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;set (score) to ((score) + (10))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;score = score + 10
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;add-a-number-on-to-a-variable-the-short-way&#34;&gt;Add a number on to a variable (the short way)&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;change (score) by [10]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;score += 10
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;subtract-a-number-from-a-variable-the-short-way&#34;&gt;Subtract a number from a variable (the short way)&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;change (score) by [-10]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;score -= 10
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;adding-strings-to-each-other&#34;&gt;Adding strings to each other&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;set (full name) to (join (first name) (last name))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;full_name = first_name + last name
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; you may notice that we didn&amp;rsquo;t add a space between those names - whoops! That&amp;rsquo;s right, the full names will be all squished up. Here&amp;rsquo;s a way to add the space:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;set (full name) to (join (first name) (join ( ) (last name)))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;full_name = first_name + &#39; &#39; + last name
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;input-and-output&#34;&gt;Input and Output&lt;/h2&gt;
-
-&lt;h3 id=&#34;display-some-text-on-the-screen&#34;&gt;Display some text on the screen:&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;say [Hello world!]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&#39;Hello world!&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;ask-for-some-text-and-display-it&#34;&gt;Ask for some text and display it:&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;ask [How many cookies can you eat?] and wait
-say (join (answer) [ cookies is a lot! ])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;cookies = input(&#39;How many cookies can you eat?&#39;)
-print(cookies + &#39; cookies is a lot!&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;custom-code&#34;&gt;Custom code&lt;/h2&gt;
-
-&lt;p&gt;If you have some code that gets repeated a lot, it is a good idea to make a reusable block of code you can call from other bits of code. In Scratch these are called custom blocks, and in Python they are called functions.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;define greeting (name)
-say (join [Hello ] (name))
-
-when flag clicked
-greeting [Matilda]
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In Python &lt;code&gt;def&lt;/code&gt; is short for &amp;lsquo;define function&amp;rsquo;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def greeting(name):
-    print(&amp;quot;Hello &amp;quot; + name)
-
-greeting(&#39;Matilda&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;comparisons&#34;&gt;Comparisons&lt;/h2&gt;
-
-&lt;p&gt;Comparisons are tests where the answer can only be True or False. They can can be used as conditions in decisions or loops.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;&amp;lt; (age) = (10) &amp;gt; // Check age equals 10
-
-&amp;lt; (age) &amp;gt; (10) &amp;gt; // Check age is greater than 10
-
-&amp;lt; (age) &amp;lt; (10) &amp;gt; // Check age is less than 10
-
-&amp;lt; not &amp;lt; (age) = (10) &amp;gt;&amp;gt; // Check age does NOT equal 10
-
-&amp;lt; &amp;lt;(age) &amp;gt; (5)&amp;gt; and &amp;lt;(age) &amp;lt; (15)&amp;gt; &amp;gt; // Check age is greater than 5 and less than 15
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;age == 10
-
-age &amp;gt; 10
-
-age &amp;lt; 10
-
-age != 10
-
-age &amp;gt; 5 and age &amp;lt; 15
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In Python a double &lt;code&gt;==&lt;/code&gt; is for comparing if two things are equal, while a single &lt;code&gt;=&lt;/code&gt; is for setting a variable to a value.&lt;/p&gt;
-
-&lt;h2 id=&#34;decisions&#34;&gt;Decisions&lt;/h2&gt;
-
-&lt;h3 id=&#34;if-then&#34;&gt;if then&lt;/h3&gt;
-
-&lt;p&gt;Use this code when you want something to happen only if the condition is True.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;if &amp;lt; (age) &amp;gt; (20) &amp;gt; then
-  say [You&#39;re old! ]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;if age &amp;gt; 20:
-    print(&amp;quot;You&#39;re old!&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;if-then-else&#34;&gt;if then else&lt;/h3&gt;
-
-&lt;p&gt;Use this code when you want two different things to happen depending on whether the condition is True or False.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;if &amp;lt; (age) &amp;gt; (20) &amp;gt; then
-  say [You&#39;re old! ]
-else
-  say [You&#39;re young ]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;if age &amp;gt; 20:
-    print(&amp;quot;You&#39;re old!&amp;quot;)
-else:
-    print(&amp;quot;You&#39;re young&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;loops&#34;&gt;Loops&lt;/h2&gt;
-
-&lt;h3 id=&#34;loop-forever&#34;&gt;Loop forever&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;forever
-  do something :: looks
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;while True:
-    something()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;loop-until&#34;&gt;Loop until&lt;/h3&gt;
-
-&lt;p&gt;The Scratch loop runs while the condition is False, but the Python loop runs while the condition is True. This is why each one has a different condition.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;repeat until &amp;lt; (score) = (0) &amp;gt;
-  do something :: looks
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;while score &amp;gt; 0:
-    something()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;loop-a-number-of-times&#34;&gt;Loop a number of times&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;repeat (7)
-  do something :: looks
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;for i in range(7):
-    something()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;random-numbers&#34;&gt;Random numbers&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-blocks&#34;&gt;set (dice roll) to (pick random (1) to (6))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In Python you need to import a random module to get the extra code for random numbers. At the top of your program, add the following line:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from random import randint
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;or:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from random import *
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The second example imports all sorts of other random number stuff too.&lt;/p&gt;
-
-&lt;p&gt;Then later on in your program when need a random number, you can use an example like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;dice_roll = randint(1, 6)
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>This page is for comparing Scratch code to Python code to help you use your knowledge of one to help learn the other. They aren&amp;rsquo;t as different as you might think.
+Comments Comments are bits of text in the code that don&amp;rsquo;t do anything and are there for helping people reading the code to understand it.
+// This is a Scratch comment. // You can create them by right clicking on the script background or a code block.</description>
     </item>
     
   </channel>
